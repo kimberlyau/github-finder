@@ -1,29 +1,27 @@
 /* Created with rce React snippet */
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-export class Navbar extends Component {
-    // Default props in case no props were passed in
-    // Passed in props will overwrite these
-    static defaultProps = {
-        title: 'Github Finder',
-    };
+const Navbar = ({title}) => {
+    return (
+        <nav className="navbar bg-primary">
+            <h1>
+                <i className="fa fa-github"/>
+                {title}
+            </h1>   
+        </nav>
+    );
+}
 
-    // Typechecking for props
-    static propTypes =  {
-        title: PropTypes.string.isRequired,
-    }
+// Default props in case no props were passed in
+// Passed in props will overwrite these
+Navbar.defaultProps = {
+    title: 'Github Finder',
+};
 
-    render() {
-        return (
-            <nav className="navbar bg-primary">
-                <h1>
-                    <i className="fa fa-github"/>
-                    {this.props.title}
-                </h1>   
-            </nav>
-        )
-    }
+// Typechecking for props
+Navbar.propTypes =  {
+    title: PropTypes.string.isRequired,
 }
 
 export default Navbar
