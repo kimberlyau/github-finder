@@ -35,7 +35,7 @@
 
 # XIII. Stateless Functional Components
 
-## Preview
+## Overview
 
 - Traditionally before React Hooks, functional components were used for stateless components
   - Both Users and Navbar components do not have any states now
@@ -99,7 +99,7 @@ UserItem.propTypes = {
 
 # XIV. HTTP Requests & Updating State
 
-## Preview
+## Overview
 
 - Since there will be components that will later interact w/ the Users component, we will want to move our users to the top level of the app
   - Provides a centralized place for state and functions that manipulate state
@@ -170,4 +170,19 @@ Solution:
 ```
 npm uninstall mime
 npm install mime@^1
+yarn add mime@1
 ```
+
+# XV. Spinner Component & Refactoring
+
+## Overview
+
+- Adding spinner component for loading
+- Refactoring Users to be a functional component
+
+# XVI. Environment Variables
+
+## Overview
+
+- Adding functionality to handle more HTTP requests
+- Adding variables to use across application
